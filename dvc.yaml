@@ -22,4 +22,3 @@ stages:
     metrics:
     - metrics.json:
         cache: false
-
