@@ -27,10 +27,6 @@ stages:
   train:
     cmd: python train.py
     deps:
-      path: data_processed.csv
-      hash: md5
-      md5: 67eaf9825502936004bf7caad92a9e52
-      size: 24333
       path: train.py
       hash: md5
       md5: 1359f19f201ea5955721f6aa586a6b47
