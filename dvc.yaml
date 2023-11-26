@@ -3,6 +3,7 @@ stages:
     cmd: python get_data.py
     deps:
     - get_data.py
+    - rawdata_new.csv
     outs:
     - data_raw.csv
   process:
