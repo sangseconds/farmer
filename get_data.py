@@ -20,9 +20,9 @@
 
 # Xuan viet
 # Đọc nội dung từ file first-data
-with open('E:/huongdoan/cmllreaning/farmer/rawdata_new.csv', 'r') as first_file:
+with open('rawdata_new.csv', 'r') as first_file:
     data = first_file.read()
 
 # Tạo một file mới có tên là second-data và ghi nội dung vào đó
-with open('E:/huongdoan/cmllreaning/farmer/data_raw.csv', 'w') as second_file:
+with open('data_raw.csv', 'w') as second_file:
     second_file.write(data)
