@@ -4,9 +4,9 @@ import wget
 # # data from https://www.sciencedirect.com/science/article/pii/S2352340920303048
 
 # Download the zipped dataset
-url = 'https://data.mendeley.com/public-files/datasets/yshdbyj6zy/files/6722d2a1-b669-427e-9c1e-f1360ad485b0/file_downloaded'
-csv_name = "data_raw.csv"
-wget.download(url, csv_name)
+url = 'https://drive.google.com/uc?export=download&id=1s8Xy8H1xKo-qQLOGkumD2r-aTQZeU4w7'
+zip_name = "data_raw.csv"
+wget.download(url, zip_name)
 
 # Unzip it and standardize the .csv filename
 # import zipfile
