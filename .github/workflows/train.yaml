@@ -19,7 +19,7 @@ jobs:
         env:
             REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          pip install python3.8-venv
+          pip install virtualenv
           python -m venv tutorial-env
           tutorial-env\Scripts\activate
           # Your ML workflow goes here
