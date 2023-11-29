@@ -16,15 +16,10 @@ jobs:
       #     python-version: '3.x'
       - uses: iterative/setup-cml@v1
 
-      - name: Install python3-venv
-        run: sudo apt-get install python3-venv -y
-
       - name: Train model
         env:
             REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python3 -m venv tutorial-env
-          source tutorial-env/bin/activate
           # Your ML workflow goes here
           pip install -r requirements.txt
           dvc repro
