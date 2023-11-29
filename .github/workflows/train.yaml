@@ -19,8 +19,8 @@ jobs:
         env:
             REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          apt install python3.8-venv
-          python3 -m venv tutorial-env
+          apt install python3-venv
+          python -m venv tutorial-env
           tutorial-env\Scripts\activate
           # Your ML workflow goes here
           pip install -r requirements.txt
